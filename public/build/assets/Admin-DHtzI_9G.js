@@ -1,0 +1,1 @@
+import{j as t}from"./app-BHfTwMPQ.js";import{A as o}from"./AuthenticatedLayout-BBe6K6Wx.js";import"./index-TTZ56dEd.js";import"./Offcanvas-BLxJhUPH.js";import"./Image-DRfgqrxp.js";import"./InputGroupContext-C8uIfxBY.js";const p=()=>t.jsx(o,{children:t.jsx("h1",{children:"Admin Account"})});export{p as default};
