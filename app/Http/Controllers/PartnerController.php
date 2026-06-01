@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Yajra\DataTables\Facades\DataTables;
 use Inertia\Inertia;
 
@@ -167,6 +168,7 @@ class PartnerController extends Controller
             ]);
         } catch (\Throwable $th) {
             DB::rollBack();
+            Log::error($th->getMessage());
             return back()->with('error', $th->getMessage());
         }
     }
